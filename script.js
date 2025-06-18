@@ -18,3 +18,22 @@ console.log("Hello! If you see this, the script is working.");
 // Try rewriting this without using querySelector
 const header = document.querySelector("#container");
 console.log("header", header);
+
+const container = document.getElementById("container");
+console.log(container);
+
+const containerQ = document.querySelector("#container");
+console.log(containerQ);
+
+const containerList = document.querySelectorAll(".second");
+console.log(containerList);
+
+const ol = document.getElementsByTagName("ol")[0];
+const thirdInOl = ol.querySelector(".third");
+console.log(thirdInOl);
+
+const section = document.getElementById("container");
+section.textContent = "Hello";
+
+const footer = document.querySelector(".footer");
+footer.className += " main"
